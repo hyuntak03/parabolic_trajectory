@@ -11,16 +11,16 @@ g = 9.8
 tm = 0.3
 distance = 0;
 height = 0;
-b.hideturtle()
-distance = t.numinput("입력","거리:",200,50,600)
-height = t.numinput("입력","높이:",150,100,200)
-b.penup()
-b.setpos(distance-200,150)
-b.pendown()
-b.left(90)
-b.forward(height-60)
-b.circle(30)
 def draw_pos(x,y):
+    b.hideturtle()
+    distance = t.numinput("입력", "거리:", 200, 50, 600)
+    height = t.numinput("입력", "높이:", 150, 100, 200)
+    b.penup()
+    b.setpos(distance - 200, 150)
+    b.pendown()
+    b.left(90)
+    b.forward(height - 60)
+    b.circle(30)
     v = t.numinput("입력","속력:",50,10,100)
     angle = math.radians(t.numinput("입력","각도:",45,0,360))
     t.hideturtle()
